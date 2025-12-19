@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe | SCT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light">
+
+<canvas id="confetti"></canvas>
+
+<div class="app">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="controls">
+        <select id="mode">
+            <option value="pvp">Player vs Player</option>
+            <option value="cpu">Player vs Computer</option>
+        </select>
+
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+
+        <button id="themeToggle">🌙</button>
+    </div>
+
+    <div id="status">Player X's Turn</div>
+
+    <div class="board">
+        <div class="cell" data-i="0"></div>
+        <div class="cell" data-i="1"></div>
+        <div class="cell" data-i="2"></div>
+        <div class="cell" data-i="3"></div>
+        <div class="cell" data-i="4"></div>
+        <div class="cell" data-i="5"></div>
+        <div class="cell" data-i="6"></div>
+        <div class="cell" data-i="7"></div>
+        <div class="cell" data-i="8"></div>
+    </div>
+
+    <button id="restart">Restart</button>
+</div>
+
+<!-- RESULT POPUP -->
+<div id="popup" class="popup hidden">
+    <div class="popup-box">
+        <h2 id="popupText"></h2>
+        <button id="playAgain">Play Again</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
